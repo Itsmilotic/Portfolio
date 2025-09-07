@@ -9,14 +9,14 @@ export default function Page() {
       <Navbar />
 
       {/* About (first) */}
-      <Section
+     <Section
   id="about"
   overline="About"
   title="Anav Lamba"
   surface="surf2"
   className="mt-6"
 >
-  <div className="text-[color:var(--muted)] leading-relaxed max-w-3xl">
+  <div className="text-[color:var(--muted)] leading-relaxed text-base">
     <p>
       I’m Anav Lamba, a Computer & Communication Engineering student passionate
       about software engineering and data systems. I’ve built ML-powered apps,
