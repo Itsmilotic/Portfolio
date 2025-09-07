@@ -10,54 +10,22 @@ export default function Page() {
 
       {/* About (first) */}
       <Section
-        id="about"
-        overline="About"
-        title="Anav Lamba"
-        surface="surf2"
-        className="mt-6"
-      >
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="text-[color:var(--muted)]">
-            <p>
-              <p>
-  I’m Anav Lamba, a Computer & Communication Engineering student passionate about software engineering and data systems.  
-  I’ve built ML-powered apps, real-time pipelines, and cloud-hosted platforms — all showcased here.  
-  My next goal is to join a team where I can work on scalable backend systems, AI-driven applications, and cloud infrastructure.
-</p>
-            </p>
-            <div className="mt-4 flex gap-3">
-              <a
-                href="mailto:anavlamba94@gmail.com"
-                className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surf3)] px-3 py-1.5 text-sm hover:bg-[color:var(--surf2)]"
-              >
-                Email
-              </a>
-              <a
-                href="/Anav_Lamba_Resume.pdf"
-                target="_blank"
-                rel="noopener"
-                className="rounded-lg bg-[color:var(--accent)] px-3 py-1.5 text-sm text-white hover:brightness-110"
-              >
-                Resume
-              </a>
-            </div>
-          </div>
-
-          {/* Replace the old empty box with small stat tiles (optional).
-              Remove this block entirely if you want 1-column on mobile, 2 on desktop. */}
-          <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
-              <div className="text-xs text-[color:var(--muted)]">Projects shipped</div>
-              <div className="text-lg font-semibold text-[color:var(--heading)]">6+</div>
-            </div>
-            <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
-              <div className="text-xs text-[color:var(--muted)]">Focus</div>
-              <div className="text-lg font-semibold text-[color:var(--heading)]">Data/ML & Web</div>
-            </div>
-          </div>
-        </div>
-      </Section>
-
+  id="about"
+  overline="About"
+  title="Anav Lamba"
+  surface="surf2"
+  className="mt-6"
+>
+  <div className="text-[color:var(--muted)] leading-relaxed max-w-3xl">
+    <p>
+      I’m Anav Lamba, a Computer & Communication Engineering student passionate
+      about software engineering and data systems. I’ve built ML-powered apps,
+      real-time pipelines, and cloud-hosted platforms — all showcased here. My
+      next goal is to join a team where I can work on scalable backend systems,
+      AI-driven applications, and cloud infrastructure.
+    </p>
+  </div>
+</Section>
       {/* Projects */}
       <Section
         id="projects"
