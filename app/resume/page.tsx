@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowLeft, Download, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/navbar"
+import Navbar from "@/components/Navbar"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
