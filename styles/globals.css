@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* Tailwind v4 dark variant helper (harmless here) */
+@custom-variant dark (&:is(.dark *));
+
+/* -----------------------------
+   Core palette — LIGHT ONLY
+   ----------------------------- */
+:root {
+  /* Light palette */
+  --bg:      #f8fafc;  /* page backdrop (slate-50) */
+  --surf1:   #ffffff;  /* cards primary */
+  --surf2:   #f1f5f9;  /* cards secondary (slate-100) */
+  --surf3:   #eef2f7;  /* elevated surfaces */
+  --border:  rgba(2,6,23,0.08);    /* soft navy border */
+  --heading: #0b1220;  /* near-black navy */
+  --muted:   #475569;  /* slate-600 */
+  --accent:  #2563eb;  /* blue-600 */
+
+  /* Semantic tokens mapped to our palette (for shadcn-style utilities) */
+  --background:           var(--bg);
+  --foreground:           var(--heading);
+  --card:                 var(--surf1);
+  --card-foreground:      var(--heading);
+  --popover:              var(--surf1);
+  --popover-foreground:   var(--heading);
+  --primary:              var(--accent);
+  --primary-foreground:   #ffffff;
+  --secondary:            var(--surf2);
+  --secondary-foreground: var(--heading);
+
+  /* "muted" pair for components (avoid name clash with our color var) */
+  --muted-bg:             var(--surf2);
+  --muted-foreground:     var(--muted);
+
+  --accent-bg:            #e9efff;       /* very light blue wash */
+  --accent-foreground:    var(--heading);
+
+  --destructive:          #ef4444;
+  --destructive-foreground:#ffffff;
+
+  --input:                rgba(2,6,23,0.12);
+  --ring:                 #3b82f6;
+
+  /* charts */
+  --chart-1: #2563eb;
+  --chart-2: #10b981;
+  --chart-3: #f59e0b;
+  --chart-4: #8b5cf6;
+  --chart-5: #f43f5e;
+
+  --radius: 0.625rem;
+
+  /* Sidebar tokens (if any) */
+  --sidebar:                     var(--surf1);
+  --sidebar-foreground:          var(--heading);
+  --sidebar-primary:             var(--accent);
+  --sidebar-primary-foreground:  #ffffff;
+  --sidebar-accent:              var(--surf2);
+  --sidebar-accent-foreground:   var(--heading);
+  --sidebar-border:              var(--border);
+  --sidebar-ring:                var(--ring);
+}
+
+/* Smooth anchor scrolling */
+html { scroll-behavior: smooth; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Readable defaults */
+@layer base {
+  * { @apply border-border outline-ring/50; }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,h2,h3,h4,h5,h6 { color: var(--heading); }
+  p, li, small      { color: var(--muted); }
+  a                 { color: var(--accent); }
+}
+
+/* Helpers for consistent panels/chips */
+@layer components {
+  .panel {
+    @apply rounded-2xl border border-[color:var(--border)] bg-[color:var(--surf1)] p-6;
+  }
+  .panel-alt {
+    @apply rounded-2xl border border-[color:var(--border)] bg-[color:var(--surf2)] p-6;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-[color:var(--border)] bg-[color:var(--surf3)] px-3 py-1.5 text-sm;
+    color: var(--muted);
+  }
+}
+
+/* Print */
+@media print {
+  nav, .no-print { display: none !important; }
+  body { background: white !important; color: #111 !important; }
+  a[href]:after { content: " (" attr(href) ")"; font-size: 10px; }
+}
