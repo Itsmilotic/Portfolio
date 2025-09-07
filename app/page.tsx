@@ -9,15 +9,15 @@ export default function Page() {
       <Navbar />
 
       {/* About (first) */}
-     <Section
+      <Section
   id="about"
   overline="About"
   title="Anav Lamba"
   surface="surf2"
   className="mt-6"
 >
-  <div className="text-[color:var(--muted)] leading-relaxed text-base">
-    <p>
+  <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-6">
+    <p className="text-[color:var(--muted)] leading-relaxed text-base">
       I’m Anav Lamba, a Computer & Communication Engineering student passionate
       about software engineering and data systems. I’ve built ML-powered apps,
       real-time pipelines, and cloud-hosted platforms — all showcased here. My
@@ -26,6 +26,7 @@ export default function Page() {
     </p>
   </div>
 </Section>
+
       {/* Projects */}
       <Section
         id="projects"
@@ -38,71 +39,143 @@ export default function Page() {
       </Section>
 
       {/* Experience */}
-      <Section id="experience" overline="Experience" title="Roles & impact" surface="surf2">
+      <Section
+        id="experience"
+        overline="Experience"
+        title="Roles & impact"
+        surface="surf2"
+      >
         <div className="space-y-4">
           <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
             <div className="flex items-center justify-between">
-              <div className="text-lg font-medium">BPAAS Solutions — Software Engineering Intern</div>
-              <div className="text-xs text-[color:var(--muted)]">May 2025 – Aug 2025 · Remote/India</div>
+              <div className="text-lg font-medium">
+                BPAAS Solutions — Software Engineering Intern
+              </div>
+              <div className="text-xs text-[color:var(--muted)]">
+                May 2025 – Aug 2025 · Remote/India
+              </div>
             </div>
             <ul className="mt-2 list-disc pl-5 text-sm text-[color:var(--muted)]">
-              <li>Selenium automation to search LinkedIn profiles/pages from Excel inputs</li>
-              <li>Scraped &amp; cleaned signals; exported to XLSX; emailed summary reports</li>
-              <li>Modular runner with retries; packaged for repeatable runs</li>
+              <li>
+                Selenium automation to search LinkedIn profiles/pages from Excel
+                inputs
+              </li>
+              <li>
+                Scraped &amp; cleaned signals; exported to XLSX; emailed summary
+                reports
+              </li>
+              <li>
+                Modular runner with retries; packaged for repeatable runs
+              </li>
             </ul>
           </div>
 
           <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
             <div className="flex items-center justify-between">
-              <div className="text-lg font-medium">AS Eqpt Pvt. Ltd. — Automation Pipeline (Freelance)</div>
+              <div className="text-lg font-medium">
+                AS Eqpt Pvt. Ltd. — Automation Pipeline (Freelance)
+              </div>
               <div className="text-xs text-[color:var(--muted)]">In progress</div>
             </div>
             <ul className="mt-2 list-disc pl-5 text-sm text-[color:var(--muted)]">
-              <li>Prototype OCR + data collection for tender/compressor workflows</li>
-              <li>Daily ETL to Google Sheets; weekly email digest of leads</li>
+              <li>
+                Prototype OCR + data collection for tender/compressor workflows
+              </li>
+              <li>
+                Daily ETL to Google Sheets; weekly email digest of leads
+              </li>
             </ul>
           </div>
         </div>
       </Section>
 
       {/* Skills */}
-      <Section id="skills" overline="Skills" title="What I work with" surface="surf1">
+      <Section
+        id="skills"
+        overline="Skills"
+        title="What I work with"
+        surface="surf1"
+      >
         <SkillsSection />
       </Section>
 
       {/* Education */}
-      <Section id="education" overline="Education" title="Education & Certifications" surface="surf2">
+      <Section
+        id="education"
+        overline="Education"
+        title="Education & Certifications"
+        surface="surf2"
+      >
         <div className="space-y-4">
+          {/* MUJ */}
           <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
             <div className="flex items-center justify-between">
               <div className="text-lg font-medium">
-                B.Tech, Computer &amp; Communication Engineering — Manipal University Jaipur
+                B.Tech, Computer &amp; Communication Engineering — Manipal
+                University Jaipur
               </div>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surf1)] px-2 py-0.5 text-xs">
                 CGPA 9.44
               </span>
             </div>
-            <div className="mt-1 text-sm text-[color:var(--muted)]">2022–2026</div>
+            <div className="mt-1 text-sm text-[color:var(--muted)]">
+              2022–2026
+            </div>
             <div className="mt-3 flex flex-wrap gap-2 text-sm">
-              {["Algorithms", "OOP", "Data Science", "RDBMS", "AI/ML"].map((c) => (
-                <span key={c} className="rounded-full border border-[color:var(--border)] bg-white/5 px-2 py-1">
-                  {c}
+              {["Algorithms", "OOP", "Data Science", "RDBMS", "AI/ML"].map(
+                (c) => (
+                  <span
+                    key={c}
+                    className="rounded-full border border-[color:var(--border)] bg-white/5 px-2 py-1"
+                  >
+                    {c}
+                  </span>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* School */}
+          <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
+            <div className="flex items-center justify-between">
+              <div className="text-lg font-medium">
+                Springdales School — CBSE (PCM)
+              </div>
+              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surf1)] px-2 py-0.5 text-xs">
+                92%
+              </span>
+            </div>
+            <div className="mt-1 text-sm text-[color:var(--muted)]">2022</div>
+            <div className="mt-3 flex flex-wrap gap-2 text-sm">
+              {["Physics", "Chemistry", "Math"].map((s) => (
+                <span
+                  key={s}
+                  className="rounded-full border border-[color:var(--border)] bg-white/5 px-2 py-1"
+                >
+                  {s}
                 </span>
               ))}
             </div>
           </div>
 
+          {/* Certifications */}
           <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
             <div className="text-sm">
-              Certifications: IBM Software Engineering, NPTEL DAA, CISCO Python 1 &amp; 2, NPTEL DBMS, Google AI
-              Essentials (in progress)
+              Certifications: IBM Software Engineering, NPTEL DAA, CISCO Python
+              1 &amp; 2, NPTEL Relational Database Management System
             </div>
           </div>
         </div>
       </Section>
 
       {/* Contact (bottom) */}
-      <Section id="contact" overline="Contact" title="Let’s connect" surface="surf1" className="mb-12">
+      <Section
+        id="contact"
+        overline="Contact"
+        title="Let’s connect"
+        surface="surf1"
+        className="mb-12"
+      >
         <div className="flex flex-wrap items-center gap-3">
           <a
             href="mailto:anavlamba94@gmail.com"
