@@ -13,15 +13,17 @@ export default function Page() {
         id="about"
         overline="About"
         title="Anav Lamba"
-        subtitle="I build reliable, measurable systems — streaming pipelines, ML apps, and clean web frontends."
         surface="surf2"
         className="mt-6"
       >
         <div className="grid gap-6 md:grid-cols-2">
           <div className="text-[color:var(--muted)]">
             <p>
-              Final-year CCE student focused on production-minded data/ML systems and clean UIs. I ship with
-              observability and clear docs.
+              <p>
+  I’m Anav Lamba, a Computer & Communication Engineering student passionate about software engineering and data systems.  
+  I’ve built ML-powered apps, real-time pipelines, and cloud-hosted platforms — all showcased here.  
+  My next goal is to join a team where I can work on scalable backend systems, AI-driven applications, and cloud infrastructure.
+</p>
             </p>
             <div className="mt-4 flex gap-3">
               <a
