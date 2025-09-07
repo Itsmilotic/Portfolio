@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Home, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Navbar } from "@/components/navbar"
+import Navbar from "@/components/Navbar"
 import { Footer } from "@/components/footer"
 
 export default function NotFound() {
