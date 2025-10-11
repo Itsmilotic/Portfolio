@@ -100,8 +100,16 @@ export default function Page() {
 
           <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
             <div className="text-sm">
-              NPTEL — Design &amp; Analysis of Algorithms; Database Systems; Optimisation for ML · Cisco Networking Academy — CCNAv7 (Switching, Routing &amp; Wireless Essentials; Introduction to Networks)
+              <span className="font-medium">AWS Cloud Practitioner Essentials</span> — AWS Training & Certification (Completed: Oct 2025)
             </div>
+            <div className="text-sm">
+              NPTEL — Design &amp; Analysis of Algorithms; Database Systems
+            </div>
+            <div className="text-sm">
+              Cisco Networking Academy — CCNAv7 (Switching, Routing &amp; Wireless Essentials; Introduction to Networks)
+            </div>
+
+            
           </div>
         </div>
       </Section>
