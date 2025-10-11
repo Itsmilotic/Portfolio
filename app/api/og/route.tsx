@@ -6,8 +6,10 @@ export const runtime = "edge"
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
-    const title = searchParams.get("title") || "Anav Lamba"
-    const subtitle = searchParams.get("subtitle") || "Software Engineer building reliable, measurable systems"
+    const title = searchParams.get("title") || "Srijan Kumar"
+    const subtitle =
+      searchParams.get("subtitle") ||
+      "Software Engineer | Full‑Stack Web, System Design & Performance Optimization"
 
     return new ImageResponse(
       <div
@@ -25,7 +27,7 @@ export async function GET(request: NextRequest) {
           position: "relative",
         }}
       >
-        {/* Background gradient overlay */}
+        {/* Gradient overlay */}
         <div
           style={{
             position: "absolute",
@@ -33,7 +35,8 @@ export async function GET(request: NextRequest) {
             left: 0,
             right: 0,
             bottom: 0,
-            background: "linear-gradient(135deg, rgba(5, 150, 105, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%)",
+            background:
+              "linear-gradient(135deg, rgba(59,130,246,0.15) 0%, rgba(16,185,129,0.15) 100%)",
           }}
         />
 
@@ -49,17 +52,17 @@ export async function GET(request: NextRequest) {
             zIndex: 1,
           }}
         >
-          {/* Logo/Monogram */}
+          {/* Monogram */}
           <div
             style={{
               fontSize: "48px",
               fontWeight: "bold",
-              color: "#059669",
+              color: "#10b981",
               marginBottom: "32px",
               fontFamily: "monospace",
             }}
           >
-            AL
+            SK
           </div>
 
           {/* Title */}
@@ -88,13 +91,13 @@ export async function GET(request: NextRequest) {
             {subtitle}
           </p>
 
-          {/* Bottom accent */}
+          {/* Accent */}
           <div
             style={{
               marginTop: "48px",
               width: "120px",
               height: "4px",
-              background: "linear-gradient(90deg, #059669 0%, #10b981 100%)",
+              background: "linear-gradient(90deg, #10b981 0%, #34d399 100%)",
               borderRadius: "2px",
             }}
           />
@@ -103,12 +106,10 @@ export async function GET(request: NextRequest) {
       {
         width: 1200,
         height: 630,
-      },
+      }
     )
   } catch (e: any) {
-    console.log(`${e.message}`)
-    return new Response(`Failed to generate the image`, {
-      status: 500,
-    })
+    console.error(e.message)
+    return new Response(`Failed to generate the image`, { status: 500 })
   }
 }

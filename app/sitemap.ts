@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { projects, notes } from "@/src/data/content"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://anavlamba.dev"
+  const baseUrl = "https://srijankumar.dev" // ← update to your domain
 
   // Static pages
   const staticPages = [
@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  // Dynamic content
   const projectPages = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,
     lastModified: new Date(),

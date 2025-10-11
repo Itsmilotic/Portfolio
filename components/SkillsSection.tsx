@@ -1,10 +1,14 @@
 const groups: Record<string, string[]> = {
-  Languages: ["Python", "JavaScript", "TypeScript", "C/C++", "Java", "SQL"],
-  Backend_ML: ["FastAPI", "Node.js", "Express", "scikit-learn", "Pandas", "NumPy"],
-  Data_Infra: ["Kafka/Redpanda", "ClickHouse", "Postgres", "MongoDB", "Docker"],
-  Frontend: ["React", "Next.js", "Tailwind CSS"],
-  Cloud_Tools: ["Vercel", "Git/GitHub", "CI/CD", "Grafana (basics)"],
+  Languages: ["JavaScript", "TypeScript", "Data Structures in C++","Java", "SQL", "HTML", "CSS"],
+  Frontend: ["React.js", "Next.js", "Tailwind CSS"],
+  Backend: ["Node.js", "Express.js", "Convex"],
+  Database_Infra: ["MongoDB", "PostgreSQL"],
+  Cloud_Tools: ["AWS (EC2, S3, Lambda)", "Vercel", "Git", "GitHub", "CI/CD", "Clerk"],
+  Networking: ["TCP/IP", "HTTP", "DNS fundamentals"],
 };
+
+
+
 
 export default function SkillsSection() {
   return (

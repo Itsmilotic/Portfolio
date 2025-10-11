@@ -14,19 +14,44 @@ const inter = Inter({
   preload: true,
 })
 
+// ────────────────────────────────────────────────────────────────────────────────
+// SITE METADATA — populated from resume (Software_Engineer_Srijan_kumar.pdf)
+// Name: Srijan Kumar | Location: Kolkata, India | Email: ksrijan09@gmail.com | GitHub: https://github.com/Itsmilotic
+// Summary highlights: Full‑stack web, system design, performance optimization; SaaS, responsive apps, AWS; 15%+ perf gains; Lighthouse 55→90+
+// ────────────────────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Anav Lamba - Software Engineer",
+  title: "Srijan Kumar - Software Engineer",
   description:
-    "Software Engineer building reliable, measurable systems — streaming pipelines, ML apps, and clean web frontends.",
+    "Software Engineer skilled in full-stack web development, system design, and performance optimization. Experienced in SaaS platforms, responsive applications, and AWS deployments; delivered 15%+ performance gains and Lighthouse 55→90+.",
   generator: "Next.js",
-  keywords: ["Software Engineer", "Full Stack Developer", "Machine Learning", "Data Engineering", "React", "Python"],
-  authors: [{ name: "Anav Lamba", url: "https://github.com/anav94" }],
-  creator: "Anav Lamba",
+  keywords: [
+    "Software Engineer",
+    "Full Stack Developer",
+    "System Design",
+    "Performance Optimization",
+    "MERN",
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "TypeScript",
+    "JavaScript",
+    "C++",
+    "Java",
+    "SQL",
+    "MongoDB",
+    "AWS",
+    "Convex",
+    "Clerk",
+    "REST APIs",
+    "Agile",
+  ],
+  authors: [{ name: "Srijan Kumar", url: "https://github.com/Itsmilotic" }],
+  creator: "Srijan Kumar",
   other: {
-    "application-name": "Anav Lamba Portfolio",
+    "application-name": "Srijan Kumar Portfolio",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
-    "apple-mobile-web-app-title": "Anav Lamba",
+    "apple-mobile-web-app-title": "Srijan Kumar",
     "format-detection": "telephone=no",
     "mobile-web-app-capable": "yes",
     "msapplication-config": "/icons/browserconfig.xml",
@@ -38,18 +63,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://anavlamba.dev",
-    title: "Anav Lamba - Software Engineer",
+    url: "/", // TODO: update to your canonical domain when available
+    title: "Srijan Kumar - Software Engineer",
     description:
-      "Software Engineer building reliable, measurable systems — streaming pipelines, ML apps, and clean web frontends.",
-    siteName: "Anav Lamba Portfolio",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Anav Lamba - Software Engineer" }],
+      "Software Engineer skilled in full-stack web development, system design, and performance optimization. Experienced in SaaS platforms, responsive applications, and AWS deployments.",
+    siteName: "Srijan Kumar Portfolio",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Srijan Kumar - Software Engineer" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anav Lamba - Software Engineer",
+    title: "Srijan Kumar - Software Engineer",
     description:
-      "Software Engineer building reliable, measurable systems — streaming pipelines, ML apps, and clean web frontends.",
+      "Software Engineer skilled in full-stack web development, system design, and performance optimization.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -69,7 +94,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Anav Lamba",
+    title: "Srijan Kumar",
   },
 }
 
@@ -81,22 +106,35 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Anav Lamba",
+    name: "Srijan Kumar",
     jobTitle: "Software Engineer",
     description:
-      "Software Engineer building reliable, measurable systems — streaming pipelines, ML apps, and clean web frontends.",
-    url: "https://anavlamba.dev",
-    email: "anavlamba94@gmail.com",
-    sameAs: ["https://github.com/anav94", "ADD_LINKEDIN_URL"],
+      "Software Engineer skilled in full-stack web development, system design, and performance optimization.",
+    url: "/", // TODO: replace with canonical URL if hosted
+    email: "mailto:ksrijan09@gmail.com",
+    telephone: "+917632094515",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kolkata",
+      addressCountry: "IN",
+    },
+    sameAs: ["https://github.com/Itsmilotic"], // Add LinkedIn when available
     knowsAbout: [
-      "Software Engineering",
-      "Machine Learning",
-      "Data Engineering",
-      "Web Development",
-      "Python",
-      "JavaScript",
+      "Full‑stack Web Development",
+      "System Design",
+      "Performance Optimization",
       "React",
       "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST APIs",
+      "MongoDB",
+      "SQL",
+      "AWS",
+      "Convex",
+      "Clerk",
+      "Data Structures and Algorithms",
+      "Agile (SDLC)",
     ],
   }
 

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   }
 
   return {
-    title: `${project.title} - Anav Lamba`,
+    title: `${project.title} - Srijan Kumar`,
     description: project.subtitle,
     openGraph: {
       title: project.title,

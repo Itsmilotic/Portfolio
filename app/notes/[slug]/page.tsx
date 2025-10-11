@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: NotePageProps): Promise<Metad
   }
 
   return {
-    title: `${note.title} | Anav Lamba`,
+    title: `${note.title} | Srijan Kumar`,
     description: note.excerpt,
     openGraph: {
       title: note.title,

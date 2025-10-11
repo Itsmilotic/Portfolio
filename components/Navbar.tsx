@@ -40,19 +40,27 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-[color:var(--border)] bg-[color:var(--bg)]/60 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2">
-        <Link href="#about" className="rounded-lg px-2 py-1 text-sm font-semibold tracking-wide text-[color:var(--heading)]">
-          AL
+        {/* Brand */}
+        <Link
+          href="#about"
+          className="rounded-lg px-2 py-1 text-sm font-semibold tracking-wide text-[color:var(--heading)]"
+          aria-label="Srijan Kumar — Home"
+        >
+          SK
         </Link>
 
+        {/* Primary nav */}
         <div className="hidden gap-3 md:flex">
           {sections.map((s) => (
             <NavLink key={s} id={s} label={s[0].toUpperCase() + s.slice(1)} />
           ))}
         </div>
 
+        {/* Actions */}
         <div className="flex items-center gap-2">
+          {/* Ensure file exists at /public/Srijan_Kumar_Resume (no extension) */}
           <Link
-            href="/Anav_Lamba_Resume.pdf"
+            href="https://drive.google.com/file/d/1zUtXnWHsEGWE8ynUcU_Ed35RwZF5QrqL/view?usp=sharing"
             target="_blank"
             rel="noopener"
             className="rounded-lg bg-[color:var(--accent)] px-3 py-1.5 text-sm text-white hover:brightness-110"
@@ -60,7 +68,7 @@ export default function Navbar() {
             Resume
           </Link>
           <Link
-            href="https://www.linkedin.com/in/anav-lamba-446686289/"
+            href="https://www.linkedin.com/in/srijan-kumar-27b1a5330/"
             target="_blank"
             rel="noopener"
             className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surf3)] px-3 py-1.5 text-sm hover:bg-[color:var(--surf2)]"
@@ -69,7 +77,7 @@ export default function Navbar() {
           </Link>
           <Link
             aria-label="GitHub"
-            href="https://github.com/anav94"
+            href="https://github.com/Itsmilotic"
             target="_blank"
             rel="noopener"
             className="rounded-lg p-2 text-[color:var(--muted)] hover:bg-white/5 hover:text-[color:var(--heading)]"

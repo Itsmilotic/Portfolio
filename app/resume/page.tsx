@@ -6,8 +6,9 @@ import Navbar from "@/components/Navbar"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Resume - Anav Lamba",
-  description: "Software Engineer resume - streaming data, ML apps, and production-minded web frontends.",
+  title: "Resume - Srijan Kumar",
+  description:
+    "Software Engineer — full-stack web, system design, and performance optimization. Next.js/React/TypeScript, Convex/Clerk, AWS deployments.",
 }
 
 export default function ResumePage() {
@@ -18,7 +19,7 @@ export default function ResumePage() {
       <main className="py-8">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="flex items-center justify-between mb-8">
+          <div className="mb-8 flex items-center justify-between">
             <Button variant="ghost" asChild>
               <Link href="/" className="flex items-center gap-2">
                 <ArrowLeft className="h-4 w-4" />
@@ -28,13 +29,13 @@ export default function ResumePage() {
 
             <div className="flex gap-2">
               <Button asChild>
-                <Link href="/Anav_Lamba_Resume.pdf" download>
+                <Link href="/Srijan_Kumar_Resume.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download PDF
                 </Link>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="/Anav_Lamba_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Link href="/Srijan_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Open in New Tab
                 </Link>
@@ -43,9 +44,9 @@ export default function ResumePage() {
           </div>
 
           {/* PDF Embed */}
-          <div className="bg-card rounded-lg border overflow-hidden">
+          <div className="bg-card overflow-hidden rounded-lg border">
             <div className="aspect-[8.5/11] w-full">
-              <iframe src="/Anav_Lamba_Resume.pdf" className="w-full h-full" title="Anav Lamba Resume" />
+              <iframe src="/Srijan_Kumar_Resume.pdf" className="h-full w-full" title="Srijan Kumar — Resume" />
             </div>
           </div>
 
@@ -54,10 +55,10 @@ export default function ResumePage() {
             <p>
               Can't see the resume?
               <Link
-                href="/Anav_Lamba_Resume.pdf"
+                href="/Srijan_Kumar_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:underline ml-1"
+                className="ml-1 text-primary hover:underline"
               >
                 Click here to view it directly
               </Link>

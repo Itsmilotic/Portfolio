@@ -46,10 +46,16 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-[color:var(--bg)]/60 border-b border-[color:var(--border)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2">
-        <Link href="#about" className="rounded-lg px-2 py-1 text-sm font-semibold tracking-wide text-[color:var(--heading)]">
-          AL
+        {/* Brand */}
+        <Link
+          href="#about"
+          className="rounded-lg px-2 py-1 text-sm font-semibold tracking-wide text-[color:var(--heading)]"
+          aria-label="Srijan Kumar — Home"
+        >
+          SK
         </Link>
 
+        {/* Primary nav */}
         <div className="hidden gap-3 md:flex">
           <NavLink id="about" label="About" />
           <NavLink id="projects" label="Projects" />
@@ -59,17 +65,20 @@ export default function Navbar() {
           <NavLink id="contact" label="Contact" />
         </div>
 
+        {/* Actions */}
         <div className="flex items-center gap-2">
+          {/* Place your PDF in /public as Srijan_Kumar_Resume.pdf */}
           <Link
-            href="/Anav_Lamba_Resume.pdf"
+            href="/Srijan_Kumar_Resume"
             target="_blank"
             rel="noopener"
             className="rounded-lg bg-[color:var(--accent)] px-3 py-1.5 text-sm text-white hover:brightness-110"
-          >
+            >
             Resume
           </Link>
+
           <Link
-            href="ADD_LINKEDIN_URL"
+            href="https://www.linkedin.com/in/srijan-kumar-27b1a5330/" // e.g., https://www.linkedin.com/in/<your-handle>
             target="_blank"
             rel="noopener"
             className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surf3)] px-3 py-1.5 text-sm hover:bg-[color:var(--surf2)]"
@@ -78,7 +87,7 @@ export default function Navbar() {
           </Link>
           <Link
             aria-label="GitHub"
-            href="https://github.com/anav94"
+            href="https://github.com/Itsmilotic"
             target="_blank"
             rel="noopener"
             className="rounded-lg p-2 text-[color:var(--muted)] hover:bg-white/5 hover:text-[color:var(--heading)]"
