@@ -15,16 +15,15 @@ export type Project = {
 const projects: Project[] = [
   {
     slug: "saas-online-code-editor",
-    title: "SaaS – Online Code Editor",
-    subtitle:
-      "Browser-based IDE allowing users to write, execute, and preview code in real time.",
+    title: "SaaS - Online Code Editor",
+    subtitle: "Browser-based IDE allowing users to write, execute, and preview code in real time.",
     featured: true,
     tech: ["Next.js", "TypeScript", "Convex", "Clerk", "AWS", "Monaco Editor"],
     highlights: [
-      "Engineered a SaaS platform enabling users to write, execute, and preview code in real time directly from the browser.",
-      "Implemented live output rendering and advanced syntax highlighting, replicating professional IDE experience.",
-      "Integrated Convex (backend) and Clerk (authentication) for secure and scalable user management.",
-      "Designed cloud-ready architecture supporting AWS deployment for global scalability and monetization.",
+      "Engineered a SaaS platform that lets users write, execute, and preview code directly in the browser.",
+      "Implemented live output rendering and advanced syntax highlighting to replicate a full IDE experience.",
+      "Integrated Convex (backend) and Clerk (authentication) for secure, scalable user management.",
+      "Designed cloud-ready architecture supporting AWS deployment for global scalability and monetisation.",
     ],
     links: {
       live: "https://code-editor-rrf4.vercel.app/",
@@ -35,14 +34,13 @@ const projects: Project[] = [
   {
     slug: "airbnb-clone",
     title: "Airbnb Clone (Full-Stack Web App)",
-    subtitle:
-      "Full-stack booking platform replicating Airbnb’s listings, authentication, and reservations.",
+    subtitle: "Full-stack booking platform replicating Airbnb's listings, authentication, and reservations.",
     featured: true,
     tech: ["React.js", "Tailwind CSS", "MongoDB", "Express", "Node.js"],
     highlights: [
-      "Developed a full-stack booking platform replicating Airbnb’s core features: property listings, reservations, authentication, and responsive design.",
-      "Built with MERN stack (React.js, Tailwind CSS, MongoDB) showcasing modern full-stack scalability.",
-      "Implemented advanced features such as search filters, map integration, and user dashboards.",
+      "Developed a booking platform replicating Airbnb's core features: listings, reservations, and authentication.",
+      "Built with the MERN stack to demonstrate modern full-stack patterns and scalability.",
+      "Implemented search filters, map integration, and personalised dashboards for hosts and guests.",
     ],
     links: {
       repo: "https://github.com/Itsmilotic/airbnb-clone",
@@ -52,16 +50,15 @@ const projects: Project[] = [
   {
     slug: "pokedex-website",
     title: "Pokedex Website",
-    subtitle:
-      "Web-based Pokedex built with HTML, CSS, and JavaScript fetching live data from the PokeAPI.",
+    subtitle: "Single-page Pokedex built with HTML, CSS, and JavaScript fetching live data from the PokeAPI.",
     featured: false,
     tech: ["HTML5", "CSS3", "JavaScript (ES6)", "PokeAPI"],
     highlights: [
-      "Browse and search Pokémon by name or ID with responsive grid layout.",
-      "Dynamic Pokémon cards showing stats, abilities, and details.",
-      "Theme toggle for light/dark accessibility.",
-      "Data fetched from PokeAPI with real-time rendering.",
-      "Future updates include filters, sorting, and comparison features.",
+      "Browse and search Pokemon by name or ID with a responsive grid layout.",
+      "Dynamic Pokemon cards showing stats, abilities, and sprite details.",
+      "Theme toggle for light and dark accessibility.",
+      "Data fetched from PokeAPI with on-demand rendering and caching.",
+      "Planned enhancements include filtering, sorting, and comparison tooling.",
     ],
     links: {
       repo: "https://github.com/Itsmilotic/Pokedex",

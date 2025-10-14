@@ -1,5 +1,5 @@
 const groups: Record<string, string[]> = {
-  Languages: ["JavaScript", "TypeScript", "Data Structures in C++","Java", "SQL", "HTML", "CSS"],
+  Languages: ["JavaScript", "TypeScript", "Data Structures in C++", "Java", "SQL", "HTML", "CSS"],
   Frontend: ["React.js", "Next.js", "Tailwind CSS"],
   Backend: ["Node.js", "Express.js", "Convex"],
   Database_Infra: ["MongoDB", "PostgreSQL"],
@@ -7,27 +7,33 @@ const groups: Record<string, string[]> = {
   Networking: ["TCP/IP", "HTTP", "DNS fundamentals"],
 };
 
-
-
-
 export default function SkillsSection() {
   return (
-    <div className="grid gap-6 md:grid-cols-2">
-      {Object.entries(groups).map(([group, items]) => (
-        <div key={group} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surf3)] p-4">
-          <div className="text-sm font-medium text-[color:var(--heading)]">{group.replace("_", " & ")}</div>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {items.map((s) => (
-              <span
-                key={s}
-                className="rounded-full border border-[color:var(--border)] bg-white/5 px-3 py-1.5 text-sm text-[color:var(--muted)]"
-              >
-                {s}
-              </span>
-            ))}
-          </div>
-        </div>
-      ))}
+    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {Object.entries(groups).map(([group, items]) => {
+        const label = group.replace(/_/g, " ");
+
+        return (
+          <article
+            key={group}
+            className="rounded-[1.25rem] border border-white/12 bg-white/[0.03] p-6 shadow-[0_25px_60px_-35px_rgba(0,0,0,0.65)]"
+          >
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[color:var(--muted)]/75">
+              {label}
+            </h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {items.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-[color:var(--muted)]"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </article>
+        );
+      })}
     </div>
   );
 }
