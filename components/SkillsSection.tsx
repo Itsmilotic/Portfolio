@@ -1,8 +1,8 @@
 const groups: Record<string, string[]> = {
   Languages: ["JavaScript", "TypeScript", "Data Structures in C++", "Java", "SQL", "HTML", "CSS"],
-  Frontend: ["React.js", "Next.js", "Tailwind CSS"],
-  Backend: ["Node.js", "Express.js", "Convex"],
-  Database_Infra: ["MongoDB", "PostgreSQL"],
+  Frontend: ["React.js", "Next.js", "Next.js 15", "Tailwind CSS", "Radix UI"],
+  Backend: ["Node.js", "Express.js", "Convex", "Prisma"],
+  Database_Infra: ["MongoDB", "PostgreSQL", "Supabase", "PgBouncer"],
   Cloud_Tools: ["AWS (EC2, S3, Lambda)", "Vercel", "Git", "GitHub", "CI/CD", "Clerk"],
   Networking: ["TCP/IP", "HTTP", "DNS fundamentals"],
 };
