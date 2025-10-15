@@ -41,7 +41,7 @@ const projects: Project[] = [
         repo: "https://github.com/Itsmilotic/ai-noteTaker",
          live: "https://ai-note-taker-omega.vercel.app/", 
       }, 
-      image: "/projects/ai-notes/cover.png",
+      image: "/projects/airbnb-clone/aicover.png",
   },
   {
     slug: "airbnb-clone",
